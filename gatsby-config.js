@@ -13,24 +13,24 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
-        navigation: [
-          {
-            title: `Blog`,
-            slug: `/blog`,
-          },
+        navigation: [  
           {
             title: `About`,
             slug: `/about`,
+          },
+          {
+            title: `Blog`,
+            slug: `/blog`,
           },
         ],
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/georgewl/`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/georgewlangham/`,
           },
         ],
       },
