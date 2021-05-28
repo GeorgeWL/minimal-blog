@@ -6,7 +6,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `georgewl.dev - George Langham`,
   },
   plugins: [
     {
@@ -32,6 +32,10 @@ module.exports = {
             name: `LinkedIn`,
             url: `https://www.linkedin.com/in/georgewlangham/`,
           },
+          {
+            name: `Github`,
+            url: `https://github.com/GeorgeWL`,
+          },
         ],
       },
     },
@@ -45,8 +49,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
+        name: `georgewl.dev - George Langham`,
+        short_name: `georgewl.dev`,
         description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
         background_color: `#fff`,
