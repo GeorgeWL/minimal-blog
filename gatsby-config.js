@@ -52,7 +52,7 @@ module.exports = {
       options: {
         name: `georgewl.dev - George Langham`,
         short_name: `georgewl.dev`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: `The personal blog and portfolio of George William Langham, a Software Developer and general tech-nerd`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
@@ -64,8 +64,8 @@ module.exports = {
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
+            src: `/android-chrome-256x256.png`,
+            sizes: `256x256`,
             type: `image/png`,
           },
         ],
