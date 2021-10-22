@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     siteTitle: `GeorgeWL`,
     siteTitleAlt: `georgewl.dev - George Langham`,
+    siteDescription: `The personal blog and portfolio of George William Langham, a Software Developer and general tech-nerd`,
   },
   plugins: [
     {
