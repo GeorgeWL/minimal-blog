@@ -1,6 +1,8 @@
+# Minimal Blog
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a57a6b8f-a152-411e-8f3d-7e0189fc984c/deploy-status)](https://app.netlify.com/sites/fervent-neumann-7f4a6d/deploys)
 
-Based on the Minimal-blog theme by [@LekoArts](https://github.com/LekoArts) 
+Based on the Minimal-blog theme by [@LekoArts](https://github.com/LekoArts)
 
 ## 🌟 Supporting the theme maker
 
