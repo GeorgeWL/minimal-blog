@@ -46,10 +46,18 @@ const Homepage = ({ posts }: PostsProps) => {
       >
         <Hero />
       </section>
-      <List>
-        <Bottom />
-      </List>
-      <Title text='Latest Posts'>
+      <section>
+        <List>
+          <Bottom />
+        </List>
+      </section>
+      <Title
+        sx={{
+          mt: 0,
+          mb: 0,
+        }}
+        text='Latest Posts'
+      >
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
           Read all posts
         </Link>
