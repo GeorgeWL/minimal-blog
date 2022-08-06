@@ -1,21 +1,27 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
+    author: 'GeorgeWL',
+    siteImage: `/logo.png`,
     siteTitle: `GeorgeWL`,
-    siteTitleAlt: `georgewl.dev - George Langham`,
-    siteDescription: `The personal blog and portfolio of George William Langham, a Software Developer and general tech-nerd`,
+    siteTitleAlt: `georgewl.dev - George WL`,
+    siteDescription: `The personal blog and portfolio of George WL, Software Developer and general tech-nerd`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
-        navigation: [  
+        navigation: [
+          {
+            title: 'Home',
+            slug: '/#',
+          },
           {
             title: `About`,
             slug: `/about`,
@@ -47,25 +53,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `georgewl.dev - George Langham`,
+        name: `georgewl.dev - George WL`,
         short_name: `georgewl.dev`,
-        description: `The personal blog and portfolio of George William Langham, a Software Developer and general tech-nerd`,
+        description: `The personal blog and portfolio of George WL, Software Developer and general tech-nerd`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-256x256.png`,
-            sizes: `256x256`,
-            type: `image/png`,
-          },
-        ],
+        icon: `static/icon.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -80,4 +75,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
