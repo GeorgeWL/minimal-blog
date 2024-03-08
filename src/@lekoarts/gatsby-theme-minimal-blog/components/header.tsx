@@ -18,7 +18,6 @@ const Header = () => {
   return (
     <header 
       sx={{ 
-        mb: [3, 4],
         position: `sticky`,
         top: `0`,
         backgroundColor: `background`,
@@ -26,7 +25,14 @@ const Header = () => {
         width: `100vw`
       }}
     >
-      <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, margin:`auto` }}>
+      <Flex 
+        sx={{
+          mb: [3, 4],
+          alignItems: `center`,
+          justifyContent: `space-between`, 
+          margin:`auto`
+        }}
+      >
         <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
           <HeaderTitle />
           <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
