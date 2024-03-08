@@ -22,29 +22,32 @@ const Header = () => {
         position: `sticky`,
         top: `0`,
         backgroundColor: `background`,
-        zIndex: 1,
+        zIndex: 10,
+        width: `100vw`
       }}
     >
-      <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
-        <HeaderTitle />
-        <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+      <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, margin:`auto` }}>
+        <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
+          <HeaderTitle />
+          <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+        </Flex>
+        <div
+          sx={{
+            boxSizing: `border-box`,
+            display: `flex`,
+            variant: `dividers.bottom`,
+            alignItems: `center`,
+            justifyContent: `space-between`,
+            mt: 3,
+            color: `secondary`,
+            a: { color: `secondary`, ':hover': { color: `heading` } },
+            flexFlow: `wrap`,
+          }}
+        >
+          <Navigation nav={nav} />
+          <HeaderExternalLinks />
+        </div>
       </Flex>
-      <div
-        sx={{
-          boxSizing: `border-box`,
-          display: `flex`,
-          variant: `dividers.bottom`,
-          alignItems: `center`,
-          justifyContent: `space-between`,
-          mt: 3,
-          color: `secondary`,
-          a: { color: `secondary`, ':hover': { color: `heading` } },
-          flexFlow: `wrap`,
-        }}
-      >
-        <Navigation nav={nav} />
-        <HeaderExternalLinks />
-      </div>
     </header>
   );
 };
